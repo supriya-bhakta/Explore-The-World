@@ -36,11 +36,11 @@ Technologies Used
 
  Application Screenshots
 
-<!-- Add your application screenshots here -->
-
-You can add your screenshots below:
 
 
+screenshots below:
+
+![Splash Screen](screenshots/Splash_screen.png)
 ![Home Screen](screenshots/Home_screen.png)
 ![Aagra Screen](screenshots/Aagra_screen.png)
 ![Maldivs Screen](screenshots/Maldivs_screen.png)
@@ -60,6 +60,6 @@ This project helped me understand:
 
  Developer
 
-Supriya Surendra Bhakta
+Supriya Bhakta
 
 GitHub: [supriya-bhakta](https://github.com/supriya-bhakta)
