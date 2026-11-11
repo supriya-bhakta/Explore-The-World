@@ -7,17 +7,18 @@ Discover. Explore. Experience.
 Users can navigate between different destination images using Previous and Next buttons. The destination name automatically updates whenever the displayed image changes.
 
  Features
-
-- Interactive destination photo gallery
-- Previous and Next image navigation
-- Dynamic destination name updates
-- Attractive and user-friendly interface
-- Continuous navigation between images
-
+ 
+-Interactive destination photo gallery.
+-Previous and Next buttons for image navigation.
+-Dynamic destination name updates.
+-Continuous navigation between destinations.
+-Splash screen when the application starts.
+-Simple and user-friendly interface.
+-Destination selection using an AlertDialog.
+-Separate Destination Details screen after confirmation.
 
  Destinations
-
-The application currently includes the following destinations:
+ The application currently includes the following destinations:
 
 - Kutch
 - Delhi
@@ -33,12 +34,13 @@ Technologies Used
 - IDE:Android Studio
 - Layout: LinearLayout and ConstraintLayout
 - UI Components: ImageView, ImageButton, TextView
+- Navigation: Android Intents
+- Dialogs: AlertDialog
+
 
  Application Screenshots
 
-
-
-screenshots below:
+ screenshots below:
 
 ![Splash Screen](screenshots/Splash_screen.png)
 ![Home Screen](screenshots/Home_screen.png)
