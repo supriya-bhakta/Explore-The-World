@@ -44,8 +44,10 @@ Technologies Used
 
 ![Splash Screen](screenshots/Splash_screen.png)
 ![Home Screen](screenshots/Home_screen.png)
-![Aagra Screen](screenshots/Aagra_screen.png)
-![Maldivs Screen](screenshots/Maldivs_screen.png)
+![Second Screen](screenshots/Second_screen.png)
+![Next Screen](screenshots/Next_screen.png)
+![Alert Screen](screenshots/Alert_screen.png)
+![Details Screen](screenshots/Details_screen.png)
 
 
 
