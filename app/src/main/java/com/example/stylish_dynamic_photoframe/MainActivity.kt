@@ -1,10 +1,15 @@
 package com.example.stylish_dynamic_photoframe
 
+import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
+import android.telecom.Call
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -23,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         val prev= findViewById<ImageButton>(R.id.imgPrev)
         val next= findViewById<ImageButton>(R.id.imgNext)
          val names= findViewById<TextView>(R.id.textView)
+        val btnSelect= findViewById<Button>(R.id.btnSelect)
         prev.setOnClickListener {
 
             val idCurrentImageString="img$currentImage"// by defaut into string
@@ -60,6 +66,26 @@ class MainActivity : AppCompatActivity() {
             names.text=place[currentImage]
 
         }
+        btnSelect.setOnClickListener {
+            val builder= AlertDialog.Builder(this)
+
+            builder.setTitle("Select Destination")
+            builder.setMessage("Are you sure you want to explore ${place[currentImage]}?")
+            builder.setPositiveButton("yes"){dialoge,which->
+
+                val intent= Intent(this, details1::class.java)
+                intent.putExtra("placeName", place[currentImage])
+
+                startActivity(intent)
+
+            }
+            builder.setNegativeButton("Cancel"){ dialoge,which->
+
+                dialoge.dismiss()
+            }
+            builder.show()
+        }
+
 
     }
 }
